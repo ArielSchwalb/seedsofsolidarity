@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Seeds Of<br>Solidarity</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="education.html">education +</a>
+                    <ul>
+                        <li><a href="womenhealingwomen.html">Women Healing Women</a></li>
+                        <li><a href="makingalivelihood.html">Making a Livelihood</a></li>
+                        <li><a href="craftyourownlife.html">Craft Your Own Life</a></li>
+                        <li><a href="growfoodeverywhere.html">Grow Food Everywhere</a></li>
+                        <li><a href="schoolgardens.html">School Gardens</a></li>
+                    </ul>
+                </li>
+                <li><a href="thefarm.html">gallery</a></li>
+                <li><a href="workshops.html">workshops</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="video.html">video</a></li>
+                <li><a href="donate.html">donate</a></li>
+                <li><a href="map.html">map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+      <div class="paragraph">
+        
+       
+          <form method="post" action=""  onSubmit="return validateForm();">
+        <div style="max-width: 400px;" >
+        </div>
+            <div style="padding-bottom: 18px; font-size : 24px;"><center>Donation Form</center></div>
+          
+            <div style="display: flex; padding-bottom: 18px;max-width : 550px;">
+            <div style="padding-bottom: 18px;" class="form-content">Full Name<br/>
+                <input type="text" id="data_4" name="data_4" style="max-width : 550px;"/>
+                </div>
+            </div>
+        
+            <div style="padding-bottom: 18px;" class="form-content">Email<br/>
+            <input type="text" id="data_4" name="data_4" style="max-width : 550px;"/>
+            </div>
+            <div style="padding-bottom: 18px;" class="form-content">Donation Amount<span style="color: red;"> *</span><br/>
+            <span><input type="radio" id="data_5_0" name="data_5" value="$50"/> $50</span><br/>
+            <span><input type="radio" id="data_5_1" name="data_5" value="$100"/> $100</span><br/>
+            <span><input type="radio" id="data_5_2" name="data_5" value="$250"/> $250</span><br/>
+            <span><input type="radio" id="data_5_3" name="data_5" value="$500"/> $500</span><br/>
+            </div>
+            
+            <div style="padding-bottom: 18px;" class="form-content">Credit Card Number<br/>
+                <input type="text" id="data_4" name="data_4" style="max-width : 550px;"/>
+                </div>
+
+                <div style="padding-bottom: 18px;" class="form-content">Card Expiration Date<br/>
+                    <input type="text" id="data_4" name="data_4" style="max-width : 550px;"/>
+                    </div>
+
+                    
+                <div style="padding-bottom: 18px;" class="form-content">CVV2 (3-Digit Number)<br/>
+                    <input type="text" id="data_4" name="data_4" style="max-width : 550px;"/>
+                    </div>
+            
+            <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit" class="form-control"/></div>
+            </form>
+
+        
+        
+            </div>
+          
+            
+
+        <script type="text/javascript">
+         function validateForm() {
+         $( ".has-error" ).removeClass("has-error");
+        if (!validateEmail(document.getElementById('data_4').value.trim())) {
+         alert('Email must be a valid email address!');
+         document.getElementById('${idForError}').parentNode.className += " has-error";
+         return false;
+        }
+        if (!document.getElementById('data_5_0').checked && !document.getElementById('data_5_1').checked && !document.getElementById('data_5_2').checked && !document.getElementById('data_5_3').checked ) {
+         alert('Donation Amount is required!');
+         document.getElementById('data_5_0').parentNode.className += " has-error";
+         return false;}
+        return true;
+         }
+         function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+         function validateEmail(email) {
+         var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+         return isEmpty(email) || re.test(email);
+        }
+        </script>
+
+
+
+        
+      
+</body>
+</html>

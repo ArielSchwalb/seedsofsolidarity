@@ -1,0 +1,310 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background: url(../seedsofsolidarity/img/field.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position:fixed;
+    top: 0; left: 0; right:0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 18.2px;
+    color: #333;
+    color: black;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 16px;
+    padding: 25px;
+    color: black;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #333;
+    color: #ffffff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #ffffff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.paragraph {
+    background-color: white;
+    padding: 35px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.paragraph h1, h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    line-height: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paragraph p {
+    color: black;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+}
+
+.icons {
+    background-color: transparent;
+}
+
+.icons .fab {
+    color: purple;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 2em;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.fa-heart {
+    color: purple;
+    background-color: transparent;
+}
+
+@media(min-width:2600px){
+    .paragraph {
+        background-color: white;
+        padding: 40px;
+        
+        margin-left:4000px;
+        margin-right: 4000px;
+    }
+
+    
+
+}
+
+@media(min-width:2500px){
+    .paragraph {
+        background-color: white;
+        padding: 40px;
+        
+        margin-left:1200px;
+        margin-right: 1200px;
+    }
+
+}
+
+@media(min-width:2200px){
+    .paragraph {
+        background-color: white;
+        padding: 40px;
+        
+        margin-left:1500px;
+        margin-right: 1500px;
+    }
+
+}
+
+@media(min-width:1800px){
+    .paragraph {
+        background-color: white;
+        padding: 40px;
+        
+        margin-left:800px;
+        margin-right: 800px;
+    }
+
+}
+
+@media(min-width:1500px){
+    .paragraph {
+        background-color: white;
+        padding: 40px;
+        
+        margin-left: 600px;
+        margin-right: 600px;
+    }
+
+}
+
+@media(min-width:1200px){
+    .paragraph {
+        background-color: white;
+        padding: 40px;
+        
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+}
+
+@media(min-width:1200px){
+    .paragraph {
+        background-color: white;
+        padding: 40px;
+        
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 1199px) {
+    div.example {
+        background-color: white;
+        padding: 4px;
+        
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+  }
+
+
+@media(max-width:991px){
+
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+    
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+
+    }
+
+    .paragraph {
+        background-color: white;
+        padding: 4px;
+        
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .paragraph h1, h2, h3 {
+        color: black;
+        font-size: 14px;
+        line-height: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .paragraph p {
+        color: black;
+        font-size: 12px;
+        line-height: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .video p {
+        height: min-content;
+        width: min-content;
+        width: 80%;
+        margin: auto;
+        padding: 80px 0;
+    }
+    
+    .video iframe {
+        width: 100%;
+    }
+    
+
+    
+    
+}
+
+@media(max-width:800px){
+
+    .paragraph {
+        padding: 50px;
+
+    }
+}
